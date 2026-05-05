@@ -1,0 +1,67 @@
+//Os atributos HTML fornecem informações adicionais sobre os elementos HTML.//
+
+//Atributos HTML//
+//Todos os elementos HTML podem ter atributos.//
+//Os atributos fornecem informações adicionais sobre os elementos.//
+//Os atributos são sempre especificados na tag de abertura.//
+//Os atributos geralmente vêm em pares nome/valor, como: nome="valor"//
+
+//O atributo href (A <a>tag define um hiperlink. O hrefatributo especifica o URL da página para a qual o link direciona:)//
+<a href="https://...">texto..</a>
+
+//O atributo src//
+//A <img>tag é usada para incorporar uma imagem em uma página HTML. O srcatributo especifica o caminho para a imagem a ser exibida://
+
+<img src="link">
+
+//Existem duas maneiras de especificar a URL no src atributo:
+1. URL absoluta - Links para uma imagem externa hospedada em outro site. Exemplo: src="https://www.w3schools.com/images/img_girl.jpg" .
+
+     Observação: As imagens externas podem estar protegidas por direitos autorais. Se você não obtiver permissão para usá-las, poderá estar infringindo as leis de direitos autorais. Além  				disso, você não tem controle sobre as imagens externas; elas podem ser removidas ou alteradas repentinamente.
+
+2. URL Relativa - Links para uma imagem hospedada dentro do site. Nesse caso, a URL não inclui o nome do domínio. Se a URL começar sem uma barra, ela será relativa à página atual. Exemplo: src="img_girl.jpg". Se a URL começar com uma barra, ela será relativa ao domínio. Exemplo: src="/images/img_girl.jpg".
+
+Dica: Quase sempre é melhor usar URLs relativas. Elas não serão afetadas se você mudar de domínio.
+
+//atributos de largura e altura//
+A <img>tag também deve conter os atributos width` heightwidth` e `height`, que especificam a largura e a altura da imagem (em pixels):
+
+<img src="img..." width:".." height:"..">
+
+//atributo alt//
+O atributo obrigatório altda <img> tag especifica um texto alternativo para uma imagem, caso a imagem não possa ser exibida por algum motivo. Isso pode ocorrer devido a uma conexão lenta, um erro no srcatributo ou se o usuário estiver utilizando um leitor de tela.
+
+<img src="img..." alt="...">
+
+//atributo de estilo//
+O styleatributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.
+
+<p style="color:red;">parágrafo vermelho.</P>
+
+//atributo lang//
+Você deve sempre incluir o langatributo dentro da <html>tag para declarar o idioma da página da Web. Isso visa auxiliar os mecanismos de busca e os navegadores.
+
+<!DOCTYPE html>
+<html lang="pt">
+<body>
+
+</body>
+</html>
+
+Os códigos de país também podem ser adicionados ao código de idioma no lang atributo. Assim, os dois primeiros caracteres definem o idioma da página HTML e os dois últimos caracteres definem o país.
+
+//atributo do título//
+O title atributo define algumas informações adicionais sobre um elemento.
+O valor do atributo title será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:
+
+<p title="...">texto</p>
+
+//RESUMO//
+Todos os elementos HTML podem ter atributos.
+O hrefatributo <a>especifica a URL da página para a qual o link direciona.
+O srcatributo <img>especifica o caminho para a imagem a ser exibida.
+Os atributos width`and` fornecem informações de tamanho para imagens.height<img>
+O altatributo <img>fornece um texto alternativo para uma imagem.
+O styleatributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.
+O langatributo da <html>tag declara o idioma da página da Web.
+O titleatributo define algumas informações adicionais sobre um elemento.
