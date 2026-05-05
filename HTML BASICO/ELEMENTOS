@@ -1,0 +1,29 @@
+//Um elemento HTML é definido por uma tag de abertura, algum conteúdo e uma tag de fechamento.//
+//O elemento HTML abrange tudo desde a tag de abertura até a tag de fechamento://
+
+<tagname>...</tagname>
+//Exemplo de elementos//
+
+<h1>titulo</h1>
+<p>parágrafo</p>
+
+//Observação: Alguns elementos HTML não possuem conteúdo (como o elemento <br>). Esses elementos são chamados de elementos vazios. Elementos vazios não possuem tag de fechamento!//
+
+//ELEMENTOS ANINHADOS//
+//Os elementos HTML podem ser aninhados (isto significa que os elementos podem conter outros elementos).//
+//Todos os documentos HTML são compostos por elementos HTML aninhados.//
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>titulo</h1>
+<p>paragrafo</p>
+
+</body>
+</html>
+
+//Elementos HTML vazios//
+//Elementos HTML sem conteúdo são chamados de elementos vazios.//
+//A <br>tag define uma quebra de linha e é um elemento vazio sem uma tag de fechamento://
+<p>isso é <br> um parágrafo</p>
