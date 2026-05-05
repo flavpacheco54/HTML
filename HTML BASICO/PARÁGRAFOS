@@ -1,0 +1,62 @@
+//PARÁGRAFOS//
+Um parágrafo sempre começa em uma nova linha e geralmente é um bloco de texto.
+
+<p>O elemento HTML define um parágrafo.
+Um parágrafo sempre começa em uma nova linha, e os navegadores adicionam automaticamente um espaço em branco (uma margem) antes e depois de um parágrafo.
+
+<p>PARÁGRAFO.</p>
+<p>outro paragrafo.</p>
+
+//Exibição HTML//
+Não é possível ter certeza de como o HTML será exibido.
+Telas grandes ou pequenas, e janelas redimensionadas, produzirão resultados diferentes.
+Com HTML, você não pode alterar a exibição adicionando espaços ou linhas extras ao seu código HTML.
+O navegador removerá automaticamente quaisquer espaços e linhas extras quando a página for exibida.
+
+//REGRAS HORIZONTAIS//
+A <hr>tag define uma quebra temática em uma página HTML e geralmente é exibida como uma linha horizontal.
+O <hr>elemento é usado para separar conteúdo (ou definir uma mudança) em uma página HTML:
+
+<h1>titulo</h1>
+<p>texto</p>
+<hr>
+<h2>outro titulo.</h2>
+<p>texto.</p>
+<hr>
+
+A <hr>tag está vazia, o que significa que não possui tag de fechamento.
+
+//  QUEBRAS DE LINHA//
+<br>O elemento HTML define uma quebra de linha.
+Use <br>se desejar uma quebra de linha (uma nova linha) sem iniciar um novo parágrafo:
+
+<p>Isso é <br> um parágrafo <br> unico.</p>
+
+A <br>tag está vazia, o que significa que não possui tag de fechamento.
+
+// O PROBLEMA DO POEMA//
+
+Este poema será exibido em uma única linha:
+<p>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</p>
+
+Solução - O elemento HTML <pre>
+<pre>O elemento HTML define um texto pré-formatado.
+O texto dentro de um <pre>elemento é exibido em uma fonte de largura fixa (geralmente Courier) e preserva tanto os espaços quanto as quebras de linha:
+
+<pre> 
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
