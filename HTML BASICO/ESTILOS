@@ -1,0 +1,61 @@
+//ESTILOS//
+O styleatributo HTML é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.
+
+É possível definir o estilo de um elemento HTML com o styleatributo.
+O styleatributo HTML possui a seguinte sintaxe:
+
+<Tagname style="property:value;">
+A propriedade é uma propriedade CSS. O valor é um valor CSS.
+
+//COR DE FUNDO//
+A background-colorpropriedade CSS define a cor de fundo de um elemento HTML.
+
+<body style="background-color:powderblue;">
+
+<h1>titulo1</h1>
+<P>PARÁGRAFO1</P>
+
+</body>
+
+Defina a cor de fundo para dois elementos diferentes:
+
+<body>
+
+<h1 style="background-color:powderblue;"> titulo1</h1>
+<p style="background-color:tomato;">paragrafo</p>
+
+</body>
+
+//COR DO TEXTO//
+A colorpropriedade CSS define a cor do texto para um elemento HTML:
+
+<h1 style="color:blue;>"titulo</h1>
+<p style="color:red;>"paragrafo</p>
+
+//FONTES//
+A propriedade CSS font-familydefine a fonte a ser usada para um elemento HTML:
+
+<h1 style="font-family:verdana;">titulo</h1>
+<p style="font-family:courier;">paragrafo</p>
+
+//TAMANHO DO TEXTO//
+A font-sizepropriedade CSS define o tamanho do texto para um elemento HTML:
+
+<h1 style="font-size:300%;">titulo 1</h1>
+<p style="font-size:160%;">paragrafo</p>
+
+//ALINHAMENTO DE TEXTO//
+A text-alignpropriedade CSS define o alinhamento horizontal do texto para um elemento HTML:
+
+<h1 style="text-align:center;">titulo</h1>
+<p style="text-align:center;">paragrafo</P>
+
+//RESUMO//
+
+Utilize o styleatributo para estilizar elementos HTML.
+Usar background-colorpara cor de fundo
+Use colorpara cores de texto
+Usar font-familypara fontes de texto
+Use font-sizepara tamanhos de texto
+Use text-alignpara alinhamento de texto;
+
