@@ -1,0 +1,49 @@
+//ELEMENTOS DE CITAÇÃO E REFERÊNCIA//
+
+//<blockquote> PARA CITAÇÕES//
+<blockquote>O elemento HTML define uma seção que é citada de outra fonte.
+Os navegadores geralmente indentam <blockquote>os elementos.
+
+<P>Here is a quote from WWF's website:</p>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+  or 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+  </blockquote>
+
+  //<q> CITAÇÕES CURTAS//
+  <q>A tag HTML define uma citação curta.
+  Os navegadores normalmente inserem aspas em torno da citação.
+
+<p>texto: <q>texto.</q></p>
+
+//<abbr> PARA ABREVIAÇÕES//
+A <abbr>tag HTML define uma abreviação ou um acrônimo, como "HTML", "CSS", "Sr.", "Dr.", "ASAP", "ATM".
+A marcação de abreviações pode fornecer informações úteis para navegadores, sistemas de tradução e mecanismos de busca.
+Dica: Use o atributo global `title` para exibir a descrição da abreviatura/sigla quando o cursor do mouse estiver sobre o elemento. 
+
+<p> O <abbr title="texto">texto</abbr> texto.</p>
+
+//<endereço> PARA INFORMAÇÕES DE CONTATO//
+A <address>tag HTML define as informações de contato do autor/proprietário de um documento ou artigo.
+As informações de contato podem ser um endereço de e-mail, URL, endereço físico, número de telefone, nome de usuário em redes sociais, etc.
+O texto dentro do <address>elemento geralmente é renderizado em itálico, e os navegadores sempre adicionam uma quebra de linha antes e depois do <address>elemento.
+
+<addres>
+  Written by John Doe.<br>
+  Visit us at:<br>
+  Example.com<br>
+  Box 564, Disneyland<br>
+  USA
+  </address>
+
+//<cite> PARA TÍTULO DE OBRA//
+A <cite>tag HTML define o título de uma obra criativa (por exemplo, um livro, um poema, uma música, um filme, uma pintura, uma escultura, etc.).
+Nota: O nome de uma pessoa não é o título de uma obra.
+O texto no <cite>elemento geralmente é exibido em itálico .
+
+<p><cite>Texto</cite> texto. Texto</p>
+
+//<bdo> PARA SUBSTITUIÇÃO BIDIRECIONAL//
+BDO significa Substituição Bidirecional.
+A <bdo>tag HTML é usada para sobrescrever a direção atual do texto:
+
+<bdo dir="rtl>Texto</bdo>
