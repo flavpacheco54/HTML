@@ -1,0 +1,59 @@
+//CORES//
+As cores HTML são especificadas com nomes de cores predefinidos ou com valores RGB, HEX, HSL, RGBA ou HSL
+
+//NOMES DE CORES// 
+Em HTML, uma cor pode ser especificada usando um nome de cor:
+
+vermelho: Tomato;
+Laranja: Orange;
+Azul brilhante: DodgerBlue;
+Verde: MediumSeaGreen
+Cinza: Gray; 
+Azul escuro: SlateBlue;
+Rosa/Violeta: Violet;
+Cinza Claro: LightGray;
+
+O HTML suporta 140 nomes de cores padrão.
+
+//COR DE FUNDO//
+Você pode definir a cor de fundo para elementos HTML:
+
+<h1 style="background-color:DodgerBlue;"Olá Mundo</h1>
+<p style="background-color;Tomato;">texto</p>
+
+//COR DO TEXTO///
+Você pode definir a cor do texto:
+
+<h1 style="color:Tomato;">Oi Mundo</h1>
+<p style="color:DodgerBlue;">texto</p>
+<p style="color:MediumSeaGreen;">texto</p>
+
+//COR DA BORDA//
+Você pode definir a cor das bordas:
+
+<h1 style="border:2px solid Tomato;">Oi mundo</h1>
+<h1 style="border:2px solid DodgerBlue;">texto</h1>
+<h1 style="border:2px solid Violet;">texto</h1>
+
+//VALORES DE COR//
+Em HTML, as cores também podem ser especificadas usando valores RGB, valores HEX, valores HSL, valores RGBA e valores HSLA.
+Os três elementos <div> a seguir têm suas cores de fundo definidas com valores RGB, HEX e HSL:
+
+VERMELHO:
+rgb(255, 99, 71)
+HEX#ff6347
+HSL(9, 100%, 64%)
+
+Os dois elementos <div> a seguir têm sua cor de fundo definida com valores RGBA e HSLA, que adicionam um canal alfa à cor (aqui temos 50% de transparência):
+
+VERMELHO:
+RGBA(255, 99, 71, 0.5)
+hsla(9, 100%, 64%, 0,5)
+
+<h1 style="background-color:rgb(255, 99, 71);"...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);"...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">..</h1>
+<h1 style="background-color:hsla(9, 100%, 64$, 0.5);"...</h1>
+
