@@ -1,0 +1,34 @@
+//CORES HEX//
+Uma cor hexadecimal é especificada com: #RRGGBB, onde os números inteiros hexadecimais RR (vermelho), GG (verde) e BB (azul) especificam os componentes da cor.
+
+//VALORES DE COR HEX//
+
+Onde rr (vermelho), gg (verde) e bb (azul) são valores hexadecimais entre 00 e ff (o mesmo que decimal 0-255).
+Por exemplo, #ff0000 é exibido em vermelho, porque o vermelho está definido com seu valor mais alto (ff), e os outros dois (verde e azul) estão definidos como 00.
+Outro exemplo: #00ff00 é exibido em verde, porque o verde está definido com seu valor mais alto (ff), e os outros dois (vermelho e azul) estão definidos como 00.
+Para exibir a cor preta, defina todos os parâmetros de cor como 00, assim: #000000.
+Para exibir a cor branca, defina todos os parâmetros de cor como ff, assim: #ffffff.
+
+//TONS DE CINZA//
+Os tons de cinza são frequentemente definidos usando valores iguais para todos os três parâmetros:
+
+GRAFITE:
+#404040
+
+CINZA 1:
+#686868
+
+CINZA 2:
+#a0a0a0
+
+CINZA 3:
+#bebebe
+
+CINZA 4:
+#dcdcdc
+
+CINZA 5:
+#f8f8f8
+
+
+
