@@ -1,0 +1,168 @@
+//CSS//
+
+CSS significa Cascading Style Sheets (Folhas de Estilo em Cascata).
+O CSS economiza muito trabalho. Ele pode controlar o layout de várias páginas da web simultaneamente.
+
+**O QUE É CSS?**
+
+As Folhas de Estilo em Cascata (CSS) são usadas para formatar o layout de uma página da web.
+
+Com CSS, você pode controlar a cor, a fonte, o tamanho do texto, o espaçamento entre os elementos, como os elementos são posicionados e dispostos, quais imagens ou cores de fundo serão usadas, diferentes exibições para diferentes dispositivos e tamanhos de tela e muito mais!
+
+Dica: O termo " cascata" significa que um estilo aplicado a um elemento pai também será aplicado a todos os elementos filhos dentro desse elemento pai. Portanto, se você definir a cor do texto principal como "azul", todos os títulos, parágrafos e outros elementos de texto dentro do corpo também receberão a mesma cor (a menos que você especifique outra cor)!
+
+//USANDO CSS//
+
+O CSS pode ser adicionado a documentos HTML de 3 maneiras:
+
+INLINE: - usando o styleatributo dentro de elementos HTML
+iNTERNO: - usando um <style>elemento na <head>seção
+EXTERNO: - usando um <link> elemento para criar um link para um arquivo CSS externo.
+
+A maneira mais comum de adicionar CSS é manter os estilos em arquivos CSS externos. No entanto, neste tutorial, usaremos estilos inline e internos, pois isso facilita a demonstração e permite que você experimente por conta própria.
+
+//CSS EMBUTIDO//
+
+O CSS embutido é usado para aplicar um estilo único a um único elemento HTML.
+Um CSS embutido utiliza o styleatributo de um elemento HTML.
+O exemplo a seguir define a cor do texto do <h1>elemento como azul e a cor do texto do <p>elemento como vermelha:
+
+<h1 style="color:blue;">Blue Heanding</h1>
+<p style="color:red;">A red paragraph.</p>
+
+// CSS INTERNO//
+
+Um CSS interno é usado para definir o estilo de uma única página HTML.
+Um CSS interno é definido na <head>seção de uma página HTML, dentro de um <style>elemento.
+O exemplo a seguir define a cor do texto de TODOS os <h1>elementos (naquela página) como azul e a cor do texto de TODOS os <p>elementos como vermelha. Além disso, a página será exibida com uma cor de fundo "azul-claro": 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {background-color: powderblue;}
+  h1 {color:blue;}
+  p {color:red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph</p>
+
+</body>
+</html>
+
+// CSS EXTERNO//
+
+Uma folha de estilo externa é usada para definir o estilo de muitas páginas HTML.
+Para usar uma folha de estilo externa, adicione um link para ela na <head>seção de cada página HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet href="style.css">
+</head>
+</body>
+
+<h1>This is a heading</h1>
+<p>This is a Paragraph</p>
+
+</body>
+</html>
+
+A folha de estilo externa pode ser escrita em qualquer editor de texto. O arquivo não deve conter nenhum código HTML e deve ser salvo com a extensão .css.
+Eis como o arquivo "styles.css" se parece:
+
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+Dica: Com uma folha de estilo externa, você pode mudar a aparência de um site inteiro, alterando apenas um arquivo!
+
+//CORES, FONTES E TAMANHOS EM CSS//
+
+Aqui, demonstraremos algumas propriedades CSS de uso comum. Você aprenderá mais sobre elas posteriormente.
+
+color: A propriedade CSS define a cor do texto a ser usada.
+font-family: A propriedade CSS define a fonte a ser usada.
+font-size: A propriedade CSS define o tamanho do texto a ser usado.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+   color: blue;
+   font-family: verdana;
+   font-size: 300%;
+}
+p {
+   color: red:
+   font-family: courier;
+   font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragrapf</p>
+
+</body>
+</html>
+
+
+// BORDA CSS //
+A border propriedade CSS define uma borda ao redor de um elemento HTML.
+Dica: Você pode definir uma borda para quase todos os elementos HTML.
+
+P {
+  border: 2px solid powderblue;
+}
+
+// PREENCHIMENTO CSS //
+A padding propriedade CSS define um preenchimento (espaço) entre o texto e a borda.
+
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+
+// MARGEM //
+A propriedade CSS margin define uma margem (espaço) fora da borda.
+
+p {
+  border:2px solid powderblue;
+  margin: 50px;
+}
+
+//LINK PARA CSS EXTERNO//
+Folhas de estilo externas podem ser referenciadas com um URL completo ou com um caminho relativo à página web atual.
+
+Este exemplo usa um URL completo para criar um link para uma folha de estilo:
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+
+Este exemplo direciona para uma folha de estilo localizada na pasta html do site atual: 
+<link rel="stylesheet" href="/html.style.css">
+
+Este exemplo direciona para uma folha de estilo localizada na mesma pasta que a página atual:
+<link rel="stylesheet" href="style.css">
+
+REUSMO
+Use o styleatributo HTML para estilização embutida.
+Utilize o elemento HTML <style>para definir CSS interno.
+Utilize o <link>elemento HTML para fazer referência a um arquivo CSS externo.
+Utilize o <head>elemento HTML para armazenar elementos <style> e <link>
+Use a colorpropriedade CSS para cores de texto.
+Use a font-familypropriedade CSS para fontes de texto.
+Use a font-sizepropriedade CSS para definir o tamanho do texto.
+Use a borderpropriedade CSS para bordas.
+Use a paddingpropriedade CSS para definir o espaço dentro da borda.
+Use a marginpropriedade CSS para definir o espaço externo à borda.
+
