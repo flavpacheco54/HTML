@@ -1,0 +1,32 @@
+// COMENTÁRIO// 
+
+Você pode adicionar comentários ao seu código HTML usando a seguinte sintaxe:
+<!-- Write your comments here -->
+
+//ADICIONAR COMENTÁRIOS//
+Com os comentários, você pode inserir notificações e lembretes no seu código HTML:
+
+<!-- Isso é um comentário -->
+<p>Isso é um párágrafo</p> 
+<!--Add mais informações-->
+
+//OCULTAR CONTEÚDO//
+Os comentários podem ser usados ​​para ocultar conteúdo.
+Isso pode ser útil se você precisar ocultar conteúdo temporariamente:
+
+<p>Isso é um parágrafo.</p>
+<!--<p>isso é outro parágrafo </p>-->
+<p>Isso também é um parágrafo</p>
+
+Você também pode ocultar mais de uma linha. Tudo entre o <br> <!--e o </br> --> ficará oculto da tela.
+<p>Isso é um parágrafo</p>
+<!--
+<p>texto para link:</p>
+<img border="0" src="texto" alt="Texto">
+-->
+<p>Isso também é parágrafo</p>
+
+//OCULTAR CONTEÚDO EMBUTIDO//
+Os comentários podem ser usados ​​para ocultar partes do código HTML.
+
+<p>isso é <!--texto--> um parágrafo. </p>
