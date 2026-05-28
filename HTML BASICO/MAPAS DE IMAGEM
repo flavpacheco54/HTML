@@ -1,0 +1,193 @@
+//MAPA DE IMAGENS//
+A <map> tag HTML define um mapa de imagem. Um mapa de imagem é uma imagem com áreas clicáveis. As áreas são definidas com uma ou mais <area> tags.
+
+COMO FUNCIONA?
+A ideia por trás de um mapa de imagem é que você deve ser capaz de realizar diferentes ações dependendo de onde você clica na imagem.
+Para criar um mapa de imagens, você precisa de uma imagem e de um código HTML que descreva as áreas clicáveis.
+
+//A IMAGEM//
+A imagem é inserida usando a <img> tag. 
+A única diferença em relação às outras imagens é que você precisa adicionar um usemap atributo:
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+O usemapvalor começa com um símbolo de hashtag # seguido pelo nome do mapa de imagem e é usado para criar uma relação entre a imagem e o mapa de imagem.
+
+// CRIAR MAPA DE IMAGEM //
+Em seguida, adicione um <map> elemento.
+
+O <map> elemento é usado para criar um mapa de imagem e está vinculado à imagem por meio do name atributo obrigatório:
+
+<map name="workmap">
+O name atributo deve ter o mesmo valor que o atributo <img>'s usemap.
+
+// AS ÁREAS //
+Em seguida, adicione as áreas clicáveis.
+
+Uma área clicável é definida usando um <area>elemento.
+
+FORMA:
+* Você deve definir o formato da área clicável e pode escolher um destes valores:
+  - rect - define uma reginão triangular
+  - circle - define uma região circular
+  - poly - define uma região poligonal
+  - default - define toda a região 
+Você também precisa definir algumas coordenadas para poder posicionar a área clicável na imagem. 
+
+    - FORMA="retângulo"
+      As coordenadas shape="rect"vêm em pares, uma para o eixo x e outra para o eixo y.
+      Assim, as coordenadas 34,44estão localizadas a 34 pixels da margem esquerda e a 44 pixels do topo
+      As coordenadas 270,350estão localizadas a 270 pixels da margem esquerda e a 350 pixels do topo
+      Agora temos dados suficientes para criar uma área retangular clicável:
+
+      <area shape="rect" coords="34, 44, 270, 350" href="computer.html">
+
+
+    - FORMA="círculo"
+      Para adicionar uma área circular, primeiro localize as coordenadas do centro do círculo: 337, 300
+      Em seguida, especifique o raio do círculo: 44 pixels
+      gora você tem dados suficientes para criar uma área circular clicável:
+
+      <area shape="circle" coords="3337, 300, 44" href="coffee.html">
+
+
+    -  FORMA="Polímero"
+        Contém shape="poly" vários pontos de coordenadas, que criam uma forma formada por linhas retas (um polígono).
+        Isso pode ser usado para criar qualquer forma.
+
+// MAPA DE IMAGEM E JAVASCRIPT //
+Uma área clicável também pode acionar uma função JavaScript.
+Adicione um click evento ao <area> elemento para executar uma função JavaScript:
+
+Aqui, usamos o atributo onclick para executar uma função JavaScript quando a área é clicada:
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.html" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup");
+}
+</script>
+
+//RESUMO//
+
+* Utilize o <map>elemento HTML para definir um mapa de imagem.
+* Utilize o <area>elemento HTML para definir as áreas clicáveis ​​no mapa de imagem.
+* Utilize o usemapatributo HTML do <img>elemento para apontar para um mapa de imagem.
+
+
+// IMAGENS DE FUNDO HTML //
+É possível especificar uma imagem de fundo para praticamente qualquer elemento HTML.
+
+Imagem de fundo em um elemento HTML:
+
+  Para adicionar uma imagem de fundo a um elemento HTML, utilize o styleatributo HTML e a background-image propriedade CSS:
+  Adicionar uma imagem de fundo a um elemento <p>: 
+
+  <p style="background-image: url('image_girl.jpg');">
+
+  Você também pode especificar a imagem de fundo no <style> elemento, na <head> seção:
+  Especifique a imagem de fundo no <style> elemento:
+
+  <style>
+  p {
+    background-image: url('img_girl.jpg');
+  }
+  </style>
+
+Imagem de fundo em uma página:
+
+  Se você deseja que a página inteira tenha uma imagem de fundo, você deve especificar a imagem de fundo no <body> elemento:
+  Adicione uma imagem de fundo para toda a página:
+
+  <style>
+  body {
+    background-image: url('img_girl.jpg');
+  }
+  </style>
+
+Repetição de fundo:
+  Se a imagem de fundo for menor que o elemento, ela se repetirá horizontal e verticalmente até atingir o final do elemento:
+
+  <style>
+  body {
+    background-image: url('example_img_girl.jpg');
+  }
+  </style>
+
+    Para evitar que a imagem de fundo se repita, defina a background-repeat propriedade como no-repeat:
+      <style>
+      body {
+        background-image: url('example_img_girl.jpg');
+        background-repeat: no-repeat;
+      }
+      </style>
+
+
+Capa de fundo:
+  Se você deseja que a imagem de fundo cubra todo o elemento, pode definir a background-size propriedade para cover.
+  Além disso, para garantir que todo o elemento esteja sempre coberto, defina a background-attachment propriedade para fixed:
+  Dessa forma, a imagem de fundo cobrirá todo o elemento, sem distorções (a imagem manterá suas proporções originais):
+
+  <style>
+  body{
+    background-image: url('img_girl.jpg');
+    backgrounf-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: conver;
+  }
+  </style>
+
+Esticar o fundo:
+  Se você deseja que a imagem de fundo se estique para preencher todo o elemento, você pode definir a background-size propriedade como: 100% 100%:
+  Experimente redimensionar a janela do navegador e verá que a imagem se esticará, mas sempre cobrirá todo o elemento.
+
+  <style>
+  body {
+    background-image: url('img_girl.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  </style>
+
+
+// ELEMENTO HTML <PICTURE> //
+
+O <picture> elemento HTML permite exibir imagens diferentes para diferentes dispositivos ou tamanhos de tela.
+O <picture>elemento HTML oferece aos desenvolvedores web mais flexibilidade na especificação de recursos de imagem.
+O <picture>elemento contém um ou mais <source> elementos, cada um fazendo referência a diferentes imagens através do srcset atributo. Dessa forma, o navegador pode escolher a imagem que melhor se adapta à visualização e/ou ao dispositivo atual.
+
+Cada <source>elemento possui um mediaatributo que define quando a imagem é mais adequada.
+
+Exibir imagens diferentes para tamanhos de tela diferentes:
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg")>
+</picture>
+
+Nota: Sempre especifique um <img> elemento como o último elemento filho do <picture> elemento. 
+O <img> elemento é usado por navegadores que não suportam o <picture> elemento, ou se nenhuma das <source> tags corresponder. 
+
+Quando usar o elemento de imagem:
+
+  Existem dois objetivos principais para o <picture>elemento:
+     - 1. Largura de banda: Se você tiver uma tela ou dispositivo pequeno, não é necessário carregar um arquivo de imagem grande. O navegador usará o primeiro <source> elemento com                   valores de atributo correspondentes e ignorará os elementos seguintes.
+     - 2. Suporte a formatos: Alguns navegadores ou dispositivos podem não suportar todos os formatos de imagem. Ao usar o <picture>elemento, você pode adicionar imagens de todos os                  formatos, e o navegador usará o primeiro formato que reconhecer, ignorando os elementos seguintes.
+
+      O navegador usará o primeiro formato de imagem que reconhecer:
+
+        <picture>
+          <source srcset="img_avatar.png">
+          <source srcset="img_girl,jpg">
+          <img src="img_beatles.gif" alt-"Beatles" style="width:auto;">
+        </picture>
+
+          Nota: O navegador utilizará o primeiro <source> elemento com valores de atributo correspondentes e ignorará quaisquer <source> elementos subsequentes.
+  
+
+
