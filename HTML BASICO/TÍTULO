@@ -1,0 +1,28 @@
+// TÍTULO DA PÁGINA //
+Toda página da web deve ter um título que descreva o seu conteúdo.
+
+O elemento do título:
+  O <title> elemento adiciona um título à sua página:
+
+  <!DOCTYPE html>-
+  <html>
+  <head>
+    <title>HTML Tutorial</title>
+  </head>
+  <body>
+
+  The content of the document...
+
+  </body>
+  </html>
+
+O que é um bom título?
+  O título deve descrever o conteúdo e o significado da página.
+
+  O título da página é muito importante para a otimização de mecanismos de busca (SEO). O texto é usado pelos algoritmos dos mecanismos de busca para determinar a ordem em que as páginas são   listadas nos resultados da pesquisa.
+ 
+  O <title> elemento:
+
+  *  Define um título na barra de ferramentas do navegador.
+  *  Fornece um título para a página quando ela é adicionada aos favoritos.
+  *  Exibe o título da página nos resultados do mecanismo de busca.
