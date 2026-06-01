@@ -1,0 +1,117 @@
+// ESTILIZAÇÃO DE TABELAS// 
+
+LISTA DE ZEBRA: 
+  Se você adicionar uma cor de fundo em uma linha sim, uma linha não, da tabela, obterá um efeito interessante de listras de zebra.
+  Para estilizar todos os outros elementos das linhas da tabela, use o :nth-child(even) seletor desta forma:
+
+      tr:nth-child(even) {
+        background-color: #D6EEEE;
+      }
+    Observação: Se você usar `\texto` (odd)em vez de `\texto` (even), a formatação ocorrerá nas linhas 1, 3, 5 etc., em vez de 2, 4, 6 etc.
+
+LISTA DE ZEBRA VERTICAL:
+  Para criar listras verticais de zebra, estilize uma coluna sim, uma coluna não, em vez de uma linha sim, uma linha não .
+  Defina os :nth-child(even)elementos de dados da tabela da seguinte forma:
+
+    td:nth-child(even), th:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+    Observação: Coloque o :nth-child()seletor em ambos thos td elementos se desejar que o estilo seja aplicado tanto aos cabeçalhos quanto às células normais da tabela.
+
+LISTAS VERTICAIS E HORIZONTIAS:
+  Você pode combinar o estilo dos dois exemplos acima e terá listras em linhas e colunas alternadas.
+  Se você usar uma cor transparente, obterá um efeito de sobreposição.
+  Use uma rgba()cor para especificar a transparência da cor:
+
+    tr:nth-child(even) {
+      background-color: rgba(150,212,212,0.4);
+    }
+    th:nth-child(even) {
+      background-color: rgba(150,212,212,0.4);
+    }
+
+DIVISÓRIAS HORIZONTAIS:
+  Se você especificar bordas apenas na parte inferior de cada linha da tabela, terá uma tabela com divisores horizontais.
+  Adicione a border-bottompropriedade a todos tros elementos para obter divisores horizontais:
+
+    tr {
+      border-bottom: 1px solid #ddd;
+    }
+
+TABELA INTERATIVA:
+  Use o :hoverseletor trpara destacar as linhas da tabela ao passar o mouse sobre elas:
+
+    tr:hover {background-color: #D6EEEE;}
+
+// GRUPO DE COLUNAS DE TABELA //
+
+GRUPO DE COLUNAS DE TABELA:
+  O <colgroup>elemento é usado para estilizar colunas específicas de uma tabela.
+  Se você quiser estilizar as duas primeiras colunas de uma tabela, use os elementos `<span>` <colgroup> e `<span> `.<col>
+  O <colgroup>elemento deve ser usado como um contêiner para as especificações da coluna.
+  Cada grupo é especificado com um <col>elemento.
+  O span atributo especifica quantas colunas receberão o estilo.
+  O style atributo especifica o estilo a ser atribuído às colunas.
+Nota: Existe uma seleção muito limitada de propriedades CSS válidas para colgroups .
+
+    <table>
+      <colgroup>
+        <col span="2" style="background-color: #D6EEEE>
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED<th>
+        <th>THU</th>
+    . . .
+Nota: A <colgroup>tag deve ser filha de um <table>elemento e deve ser colocada antes de quaisquer outros elementos da tabela, como <thead>, <tr>, <td> etc., mas depois do <caption>elemento , se presente.
+
+PROPRIEDADES CSS LEGAIS:
+  Existe apenas uma seleção muito limitada de propriedades CSS que podem ser usadas no colgroup:
+    * width, visibility, background e border.
+
+ELEMENTOS DE COLUNAS MÚLTIPLOS
+   Se você deseja estilizar várias colunas com estilos diferentes, use mais de um <col>elemento dentro do <colgroup>:
+
+      <table>
+        <colgroup>
+           <col span="2" style="background-color: #D6EEEE>
+          <col span="3" style="background-color: pink">
+        </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+      . . .
+
+GRUPO DE COLUNAS VAZIOS:
+  Se você deseja estilizar colunas no meio de uma tabela, insira um <col>elemento "vazio" (sem estilos) para as colunas antes de:
+
+    <table>
+      <colgroup>
+        <col span="3">
+        <col span="2" style="background-color: pink">
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED<th>
+        <th>THU<th>
+    . . .
+
+OCULTAR COLUNAS:
+  Você pode ocultar colunas com a visibility: collapseseguinte propriedade:
+
+    <table>
+      <colgroup>
+        <col span="2">
+        <col span="3" style="visibility: collapse">
+      </colgroup>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED<th>
+        <th>THU<th>
+    . . . 
+  
