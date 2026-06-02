@@ -1,0 +1,42 @@
+// ELEMENTOS DE BLOCO E ELEMENTOS EMBUTIDOS //
+  Cada elemento HTML possui um valor de exibição padrão, dependendo do tipo de elemento.
+  Os dois valores de exibição mais comuns são bloco e em linha.
+
+ELEMENTOS DE NÍVEL DE BLOCO:
+  Um elemento de bloco sempre começa em uma nova linha, e os navegadores adicionam automaticamente um espaço (uma margem) antes e depois do elemento.
+  Um elemento de bloco sempre ocupa toda a largura disponível (estende-se para a esquerda e para a direita o máximo possível).
+  Dois elementos de bloco comumente usados ​​são: <p> e <div>. 
+  O <p>elemento define um parágrafo em um documento HTML.
+  O <div>elemento define uma divisão ou uma seção em um documento HTML.
+
+  O elemento <p> é um elemento de bloco.
+  O elemento <div> é um elemento de bloco.
+
+    <p>Hello World</p>
+    <div>Hello World</div>
+
+ELEMENTOS EMBUTIDOS
+  Um elemento em linha não começa em uma nova linha.
+  Um elemento em linha ocupa apenas a largura necessária.
+  Este é um elemento <span> dentro de um parágrafo.
+
+    <span>Hello World</span>
+Observação: Um elemento em linha não pode conter um elemento de bloco!
+
+O ELEMENTO <div>
+  O <div>elemento é frequentemente usado como um contêiner para outros elementos HTML.
+  O <div>elemento não possui atributos obrigatórios, mas `<span>` style, ` <span>` classe ` id<span>` são comuns.
+  Quando usado em conjunto com CSS, o <div>elemento pode ser usado para estilizar blocos de conteúdo:
+
+    <div style="background-color:black;color:white;padding:20px">
+      <h2>London</h2>
+      <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+
+O ELEMENTO <span>
+  O <span>elemento é um contêiner embutido usado para marcar uma parte de um texto ou uma parte de um documento.
+  O <span>elemento não possui atributos obrigatórios, mas `<span>` style, ` <span>` classe ` id<span>` são comuns.
+  Quando usado em conjunto com CSS, o <span>elemento pode ser usado para estilizar partes do texto:
+
+    <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+  
