@@ -1,0 +1,233 @@
+// LISTAS HTML //
+
+    As listas HTML permitem que os desenvolvedores web agrupem um conjunto de itens relacionados em listas.
+EXEMPLO:
+  Uma lista HTML não ordenada:  
+
+Item
+Item
+Item
+Item
+
+  Uma lista HTML ordenada:
+
+Primeiro item
+Segundo item
+Terceiro item
+Quarto item
+
+LISTA NÃO ORDENADA:
+  Uma lista não ordenada começa com a <ul>tag. Cada item da lista começa com a <li>tag.
+  Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+LISTA ORDENADA:
+  Uma lista ordenada começa com a <ol>tag. Cada item da lista começa com a <li>tag.
+  Os itens da lista serão numerados por padrão:
+
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+LISTA DE DESCRIÇÃO:
+  O HTML também suporta listas de descrição.
+  Uma lista descritiva é uma lista de termos, com uma descrição para cada termo.
+  A <dl>tag define a lista de descrição, a <dt>tag define o termo (nome) e a <dd> tag descreve cada termo:
+
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+
+LISTA NÃO ORDENADA:
+  A tag HTML <ul>define uma lista não ordenada (com marcadores).
+  Uma lista não ordenada começa com a <ul>tag. Cada item da lista começa com a <li>tag.
+  Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+Lista HTML não ordenada - Selecionar marcador de item da lista:
+  A list-style-typepropriedade CSS é usada para definir o estilo do marcador do item da lista. Ela pode ter um dos seguintes valores:
+
+    * disc: Sets the list item marker to a bullet (default)
+    * circle: Sets the list item marker to a circle
+    * square: Sets the list item marker to a square
+    * none: The list items will not be marked
+
+DISCO:
+  <ul style="list-style-type:disc;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+CIRCLE:
+  <ul style="list-style-type:circle;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+QUADRADO:
+  <ul style="list-style-type:square;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </u>
+
+SEM MARCADOR DE LISTA:
+  <ul style="list-style-type:none;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </u>
+
+LISTA ANINHADA:
+  Listas podem ser aninhadas (lista dentro de lista):
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+        <ul>
+          <li>Black Tea</li>
+          <li>Green Tea</li>
+        </ul>
+      </li>
+      <li>Milk</li>
+    </ul>
+Nota: Um item de lista ( <li>) pode conter uma nova lista e outros elementos HTML, como imagens e links, etc.
+
+LISTA HORIZONTAL COM CSS:
+  Listas HTML podem ser estilizadas de diversas maneiras com CSS.
+  Uma maneira popular é formatar uma lista horizontalmente, para criar um menu de navegação:
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    li {
+      float: left;
+    }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color: #111111;
+    }
+    </style>
+    </head>
+    <body>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+    </body>
+    </html>
+
+LISTA HTML ORDENADA
+    Uma lista ordenada começa com a <ol>tag. Cada item da lista começa com a <li>tag. 
+    Os itens da lista serão numerados por padrão:
+
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+LISTA HTML ORDENADA: ATRIBUTO TYPE
+    O typeatributo da <ol>tag define o tipo do marcador do item da lista:
+      * type="1": The list items will be numbered with numbers (default)
+      * type="A": The list items will be numbered with uppercase letters
+      * type="a": The list items will be numbered with lowercase letters
+      * type="l": The list items will be numbered with uppercase roman numbers
+      * type="i": The list items will be numbered with lowercase roman numbers
+
+NUMEROS:
+  <ol type="1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+LETRAS MAIÚSCULAS:
+  <ol type="A">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+LETRAS MINÚSCULAS:
+  <ol type:"a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+NÚMEROS ROMANOS - MAIÚSCULOS
+  <ol type="I">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+NÚMEROS ROMANOS - MINÚSCULOS
+  <ol type="i">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+CONTAGEM DA LISTA DE CONTROLE
+  Por padrão, uma lista ordenada começa a contagem a partir de 1. Se você quiser começar a contagem a partir de um número específico, pode usar o startatributo:
+    <ol start="50">
+      <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+LISTAS HTML ANINHADAS
+   Listas podem ser aninhadas (lista dentro de lista):
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+          <ol>
+            <li>Black Tea>/li>
+            <li>Green Tea</li>
+          </ol>
+        </li>
+      <li>Milk</li>
+    </ol>
+Nota: Um item de lista ( <li>) pode conter uma nova lista e outros elementos HTML, como imagens e links, etc.
+
+
+
+      
