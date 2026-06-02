@@ -1,0 +1,96 @@
+// ATRIBUTO ID //
+
+O atributo HTML idé usado para especificar um ID exclusivo para um elemento HTML.
+Não é possível ter mais de um elemento com o mesmo ID em um documento HTML.
+
+O idatributo especifica um ID único para um elemento HTML. O valor do id atributo deve ser único em todo o documento HTML.
+O idatributo é usado para apontar para uma declaração de estilo específica em uma folha de estilo. Ele também é usado pelo JavaScript para acessar e manipular o elemento com o ID específico.
+A sintaxe para o id é: escreva um caractere de cerquilha (#), seguido por um nome de id. Em seguida, defina as propriedades CSS dentro de chaves {}.
+No exemplo a seguir, temos um <h1>elemento que aponta para o nome do ID "myHeader". Este <h1> elemento será estilizado de acordo com a #myHeader definição de estilo na seção <head>:
+
+  <!DOCSTYLE html>
+  <html>
+  <head>
+  <style>
+  #myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+  </style>
+  </head>
+  <body>
+
+  <h1 id="myHeader">My Header</h1>
+
+  </body>
+  </html>
+Observação: o nome do identificador diferencia maiúsculas de minúsculas!
+Observação: o nome de identificação deve conter pelo menos um caractere, não pode começar com um número e não deve conter espaços em branco (espaços, tabulações etc.).
+
+DIFERENÇA ENTRE CLASSE E ID
+  Um nome de classe pode ser usado por vários elementos HTML, enquanto um nome de ID deve ser usado por apenas um elemento HTML na página:
+
+    <style>
+    /* Style the element with the id "myHeader" */
+    #myHeader {
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;  
+    }
+
+    /* Style all elements with the class name "city" */
+    .city {
+      background-cold: tomato;
+      color: white;
+      padding; 10px;
+    }
+    </style>
+
+    <!-- An element with a unique ID -->
+    <h1 id="myHeader">My cities</h1>
+
+    <!-- Multiple elements with same class -->
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+FAVORITOS HTML COM ID E LINKS
+    Os marcadores HTML são usados ​​para permitir que os leitores acessem partes específicas de uma página da web.
+    Os marcadores podem ser úteis se a sua página for muito longa.
+    Para usar um marcador, primeiro você precisa criá-lo e depois adicionar um link a ele.
+    Então, quando o link for clicado, a página rolará até o local com o marcador.
+
+    Primeiro, crie um marcador com o idatributo:
+      <h2 id="C4>Chapter 4</h2>
+
+    Em seguida, adicione um link para o marcador ("Ir para o Capítulo 4"), na mesma página:
+      <a href="#C4">Jump to chapter 4</a>
+
+    Ou, adicione um link para o marcador ("Ir para o Capítulo 4"), a partir de outra página:
+      <a href="html_demo.html#C4">Jump to chapter 4</a>
+
+ATRIBUTO ID EM JAVASCRIPT
+  O idatributo também pode ser usado pelo JavaScript para executar algumas tarefas para esse elemento específico.
+  Em JavaScript, é possível acessar um elemento com um ID específico usando o seguinte getElementById()método:
+
+    <script>
+    function displayResult() {
+      document.getElementById("MyHeader").innerHTML = "Have a nice day!"
+    }
+    </script>
+
+RESUMO
+ * O idatributo é usado para especificar um ID exclusivo para um elemento HTML.
+ * O valor do id atributo deve ser único dentro do documento HTML.
+ * O id atributo é usado pelo CSS e JavaScript para estilizar/selecionar um elemento específico.
+ * O valor do id atributo diferencia maiúsculas de minúsculas.
+ * O id atributo também é usado para criar favoritos HTML.
+ * O JavaScript pode acessar um elemento com um ID específico usando o getElementById() método.
