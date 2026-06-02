@@ -1,0 +1,46 @@
+// BOTÃO HTML //
+
+Os botões permitem que os usuários interajam com uma página da web. Ao serem clicados, podem enviar formulários, executar JavaScript ou acionar diferentes ações.
+<button>O elemento HTML define um botão clicável.
+Por si só, o botão não faz nada até que você adicione uma ação a ele.
+
+  <button>Click Me</button>
+
+ESTILIZANDO BOTÕES HTML
+  Os botões geralmente são estilizados com CSS:
+
+    <button class="mytestbtn">Green Button</button>
+
+BOTÕES DESATIVADOS
+  Use o disabledatributo para tornar um botão não clicável:
+
+    <button disabled>Disabled Button</button>
+Dica: Botões desativados não podem ser clicados e geralmente aparecem esmaecidos.
+
+BOTÃO COM JAVASCRIPT
+  Você pode executar JavaScript quando o usuário clicar em um botão usando o onclickatributo:
+
+    <button onclick="alert('Hello!')">Click Me</button>
+
+TIPOS DE BOTÕES
+  O typeatributo define o que um botão faz quando clicado. Existem três tipos de botões:
+
+  * type="button": Um botão clicável normal (não faz nada por padrão)
+  * type="submit": Envia um formulário
+  * type="reset": Redefine todos os campos do formulário
+
+      <button type="button">Normal Button</buton>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</reset>
+
+Os botões são frequentemente usados ​​dentro de formulários , sobre os quais você aprenderá mais em um capítulo posterior.
+Por enquanto, basta saber que um submitbotão envia os dados do formulário para o servidor, enquanto um resetbotão limpa o formulário:
+
+    <form action="/actiobn_page.php">
+      First name: <input type="text" name="fname">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+Observação: você deve sempre especificar o typeatributo. Dentro de um formulário, o tipo padrão é `text` submit, e os navegadores podem se comportar de maneira diferente se o tipo for omitido.
+
+
