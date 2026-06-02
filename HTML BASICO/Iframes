@@ -1,0 +1,42 @@
+// Iframes //
+Um iframe HTML é usado para exibir uma página da web dentro de outra página da web.
+
+SINTAXE HTML IFRAME
+  <iframe>A tag HTML especifica um frame embutido.
+  Um frame embutido é usado para incorporar outro documento dentro do documento HTML atual.
+
+    <iframe src="url" title="description"></iframe>
+Dica: É uma boa prática sempre incluir um titleatributo para o iframe <iframe>. Isso é usado por leitores de tela para ler o conteúdo do iframe.
+
+IFRAME - DEFINIR ALTURA E LARGURA
+  Utilize os atributos ` heightsize` e `size` widthpara especificar o tamanho do iframe.
+  A altura e a largura são especificadas em pixels por padrão:
+
+    <iframe src="demo_iframe.html" height:"200" width:"300" title="Iframe Example"><iframe>
+
+Ou você pode adicionar o styleatributo e usar o CSS heighte width as propriedades:
+    <iframe src="demo_iframe.html" style="height:200px;width:300px;" title="Iframe Example"></iframe>
+
+REMOVER A BORDA
+  Por padrão, um iframe possui uma borda ao seu redor.
+  Para remover a borda, adicione o styleatributo e use a borderpropriedade CSS:
+
+    <iframe src="demo_iframe.html" style="border:none;" title="Iframe Example"></iframe>
+
+Com CSS, você também pode alterar o tamanho, o estilo e a cor da borda do iframe:
+    <iframe src="demo_iframe.html" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+DESTINO PARA O LINK
+  Um iframe pode ser usado como o frame de destino para um link.
+  O targetatributo do link deve fazer referência ao nameatributo do iframe:
+
+    <iframe src="demo_iframe.html" name="iframe_a" title="Iframe Example"></iframe>
+
+    <p><a href="https://www.w3schools.com" target="iframe_a">WSchools.com</a></p>
+
+RESUMO DO CAPITULO:
+  * <iframe> A tag HTML específica um frame embutido
+  * O src define o URL da página a ser incorporada
+  * Inclua sempre um title (para leitores de tela).
+  * Os atributos 'height size' e 'size' width especificam o tamanho da fonte
+  * Use border:none; para remover a borda ao redor do Iframe 
