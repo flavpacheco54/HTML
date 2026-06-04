@@ -1,0 +1,38 @@
+// CAMINHOS DE ARQUIVOS HTML //
+O caminho de um arquivo descreve a localização de um arquivo na estrutura de pastas de um site.
+
+<img src="picture.jpg">: 	O arquivo "picture.jpg" está localizado na mesma pasta que a página atual.
+<img src="images/picture.jpg">: O arquivo "picture.jpg" está localizado na pasta "images" dentro da pasta atual.
+<img src="/images/picture.jpg">: O arquivo "picture.jpg" está localizado na pasta "images" na raiz do site atual.
+<img src="../picture.jpg">: O arquivo "picture.jpg" está localizado na pasta um nível acima da pasta atual.
+
+O caminho de um arquivo descreve a localização de um arquivo na estrutura de pastas de um site.
+Os caminhos de arquivo são usados ​​ao criar links para arquivos externos, como:
+
+    * Páginas da Web
+    * Imagens
+    * Folhas de estilo
+    * JavaScripts
+
+CAMINHOS DE ARQUIVOS ABSOLUTOS
+  Um caminho de arquivo absoluto é a URL completa de um arquivo:
+
+    <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+CAMINHOS DE ARQUIVOS RELATIVOS 
+  Um caminho de arquivo relativo aponta para um arquivo em relação à página atual.
+  No exemplo a seguir, o caminho do arquivo aponta para um arquivo na pasta de imagens localizada na raiz do site atual:
+
+    <img src="/images/picture.jpg" alt="Mountain">
+
+  No exemplo a seguir, o caminho do arquivo aponta para um arquivo na pasta "images" localizada na pasta atual:
+
+    <img src="images/picture.jpg" alt="Mountain">
+
+  No exemplo a seguir, o caminho do arquivo aponta para um arquivo na pasta "images" localizada um nível acima da pasta atual:
+
+    <img src="../images/picture.jpg" alt="Mountain">
+
+MELHORES PRÁTICAS
+  A melhor prática é usar caminhos de arquivo relativos (se possível).
+  Ao usar caminhos de arquivo relativos, suas páginas da web não ficarão vinculadas ao seu URL base atual. Todos os links funcionarão no seu computador (localhost), bem como no seu       domínio público atual e em seus futuros domínios públicos.
