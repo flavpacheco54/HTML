@@ -1,0 +1,37 @@
+// HTML JAVASCRIPT //
+O JavaScript torna as páginas HTML mais dinâmicas e interativas.
+
+A TAG HTML <SCRIPT>
+  A tag HTML <script>é usada para definir um script do lado do cliente (JavaScript).
+  O <script>elemento contém instruções de script ou aponta para um arquivo de script externo através do srcatributo.
+  Os usos mais comuns do JavaScript incluem manipulação de imagens, validação de formulários e alterações dinâmicas de conteúdo.
+  Para selecionar um elemento HTML, o JavaScript geralmente usa o document.getElementById()método.
+  Este exemplo em JavaScript escreve "Olá JavaScript!" em um elemento HTML com o id="demo":
+
+    <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+
+  AMOSTA DE JAVASCRIPT
+    Aqui estão alguns exemplos do que o JavaScript pode fazer:
+    JavaScript pode alterar o conteúdo:
+
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+    JavaScript pode alterar estilos:
+
+      document.getElementById("demo").style.fontsize = "25px";
+      document.getElementById("demo").style.color = "red";
+      document.getElementById("demo").style.backgroundColor = "yellow";
+
+    JavaScript pode alterar atributos:
+
+      document.getElementById("image").src = "picture.gif";
+
+  A TAG HTML <NOSCRIPT>
+    A <noscript>tag HTML define um conteúdo alternativo a ser exibido para usuários que desativaram scripts em seus navegadores ou que possuem um navegador que não oferece suporte a scripts:
+
+      <script>
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      </script>
+      <noscript>Sorry, your browser does not support JavaScript!</noscript>
